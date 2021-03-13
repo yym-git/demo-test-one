@@ -1,0 +1,4 @@
+Runnable和Callable的区别:
+Runnable无返回值
+Callable有返回值
+实现的接口方法不同，Runnable接口实现run方法，Callable接口实现call方法

@@ -1,0 +1,5 @@
+org.springframework.context.ApplicationContextInitializer=\
+  com.person.cn.demotestone.initlaizer.FirstInitializer
+org.springframework.context.ApplicationListener=\
+  com.person.cn.demotestone.listener.FirstListener,\
+  com.person.cn.demotestone.listener.FourthListener

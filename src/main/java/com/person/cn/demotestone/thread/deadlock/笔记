@@ -1,0 +1,4 @@
+线程死锁定位：
+1、在idea打开终端，输入命令 jps -l
+8052 com.person.cn.demotestone.thread.deadlock.DeadLockDemo
+2、执行命令 jstack 8052（进程编号）
