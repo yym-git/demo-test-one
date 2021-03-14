@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class MyAspect {
-    @Pointcut("execution(* com.atguigu.aop.com.aop2.UserServiceImpl.printUser(..))")
+    @Pointcut("execution(* com.person.cn.service.impl.UserServiceImpl.printUser(..))")
     public void pointCut() {
 
     }
