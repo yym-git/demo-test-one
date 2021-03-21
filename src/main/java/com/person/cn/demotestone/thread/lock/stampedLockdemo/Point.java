@@ -1,7 +1,5 @@
-package com.person.cn.demotestone.thread.lock;
+package com.person.cn.demotestone.thread.lock.stampedLockdemo;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.locks.StampedLock;
 
 /**

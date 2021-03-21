@@ -5,6 +5,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /**
  * @author ym.y
  * @description 实际缓存失效，重新刷新缓存---锁降级
+ * ReentrantReadWriteLock：使用锁降级防止缓存穿透
  * @package com.person.cn.demotestone.thread.lock.reentrantreadwritelock
  * @updateUser
  * @date 10:24 2020/12/31

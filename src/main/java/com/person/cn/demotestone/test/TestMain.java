@@ -10,7 +10,7 @@ import java.util.Map;
  * @updateUser
  * @date 22:482020/11/3
  */
-public class TestHasMap {
+public class TestMain {
 
     public static void main(String[] args) {
 

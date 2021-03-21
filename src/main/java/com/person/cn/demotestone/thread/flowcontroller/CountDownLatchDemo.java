@@ -26,6 +26,7 @@ public class CountDownLatchDemo {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     } finally {
+                        //每启动一个线程，state的值-1
                         countDownLatch.countDown();
                     }
                 }
@@ -34,6 +35,7 @@ public class CountDownLatchDemo {
         }
         System.out.println("等待5名游客安检......");
         try {
+            // await()方法相当于一个阀门，等到state=0时，程序往下执行
             countDownLatch.await();
         } catch (InterruptedException e) {
             e.printStackTrace();

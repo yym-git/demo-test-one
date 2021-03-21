@@ -14,7 +14,9 @@ public class FutureTaskTest {
             new ArrayBlockingQueue<>(1),new ThreadPoolExecutor.AbortPolicy());
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
+       ThreadPoolExecutor threadPoolExecutor2 = new ThreadPoolExecutor(1,1,1L, TimeUnit.MINUTES,
+                new ArrayBlockingQueue<>(1),new ThreadPoolExecutor.AbortPolicy());
+        threadPoolExecutor2.allowCoreThreadTimeOut(true);
         //添加任务one
         Future futureOne = threadPoolExecutor.submit(new Runnable() {
             @Override

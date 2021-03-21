@@ -29,12 +29,14 @@ public class SemaphoreDemoOne {
         @Override
         public void run() {
             try {
+                // state减1
                 semaphore.acquire();
                 System.out.println(Thread.currentThread().getName() + "获取到了许可证");
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
+                //state 加 1
                 semaphore.release();
                 System.out.println(Thread.currentThread().getName() + "释放了许可证");
             }
